@@ -16,114 +16,77 @@ Testing the webserver
 
 ## PROGRAM:
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-<!DOCTYPE html>
-<html>
-<head>
-<title>Saveetha Engineering College</title>
-<link rel = "icon" href = 
-"https://media.discordapp.net/attachments/533340656987275284/906080541344956436/kissclipart-saveetha-university-chennai-logo-clipart-saveetha-3a90c06681798db2.png" 
-        type = "image/x-icon">
-</head>
-<body>
-<br><center><img src="https://media.discordapp.net/attachments/533340656987275284/906080541344956436/kissclipart-saveetha-university-chennai-logo-clipart-saveetha-3a90c06681798db2.png" alt="Saveetha Engineering College" style="width:100px;height:100px;"><h1>SAVEETHA ENGINEERING COLLEGE</center></h1></br>
-<br><h2>Student Detail</h2></br>
-<h3>Name: SHYAM KUMAR A</h1>
-<h3>Reference Number: 21001647</h3>
-<h3>Department: B.Tech AI&DS</h6>
-<h3>Contact(Gmail): shyamsantino42@gmail.com</h3>
-<center><br><br><div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="copyright-text">
-                <p>
-                  © 2021
-                  <a href=""
-                    ><u>Python Web Hosting</u></a
-                  >. All rights reserved. Made With ❤ by
-                  <a href=""><u>SRIJITH</u></a> and 
-                  <a
-                    href=""
-                    ><u>JESHWANTH</u></a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div></br></br></center>
-</body>
-  <style>
-    @font-face {
-      font-family: "Euclid Circular B Medium";
-      src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot");
-      src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix")
-          format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2")
-          format("woff2"),
-        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff")
-          format("woff"),
-        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf")
-          format("truetype"),
-        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium")
-          format("svg");
-    }
-    body {
-      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
-      color: #fff;
-      font-family: "Euclid Circular B Medium", Poppins;
-    }
-     <style>
-  <script>
-    .footer {
-      padding: 32px 0;
-      position: absolute;
-      width: 100%;
-      background-color: red;
-      color: white;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.5);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(9px);
-      -webkit-backdrop-filter: blur(9px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-    .footer p {
-      margin: 0;
-      line-height: 26px;
-      font-size: 15px;
-      color: #fff;
-    }
-    .footer p a {
-      background: linear-gradient(to right, #f27121, #e94057, #8a2387);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-decoration: none;
-    }
-    .footer p a:hover {
-      color: white;
-    }
-  </style>
-  <script>
-</html>
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',2004)
-httpd = HTTPServer(server_address,myhandler)
-print("Website is running...")
-httpd.serve_forever()
+from http.server import HTTPServer,BaseHTTPRequesthandler content = """
+
+TOP FIVE PROGRAMMING LANGUAGES
+1.JavaScript
+JavaScript is one of the significant dialects instructed in each bootcamp.It's an absolute necessity to know language in case you being a software engineer. It is utilized basically for making impacts which are intuitive in the programs. It is one of the center existing advances of the web with HTML and CSS. It is likewise utilized as front end in many cases just as in number of web systems.
+Pros
+* Optimises server loads
+* Eye catching interfaces
+* Versatility
+* Speedy
+* Easy learning
+
+Cons
+* Client security
+* Slow operations
+* Interprets different in different browsers
+2.PHP
+PHP is appropriate for web advancement and it can likewise be installed into HTML. It is an open source prearranging language. It likewise has different systemss with the utilization of which it ends up being more proficient. It diminishes the errands of composing long and composite codes.
+Pros
+* Runs on various platforms
+* Open source
+* Simple, Fluent & Organised
+* Can connect with the database easily
+
+Cons
+* Error handling
+3.C++
+It is the most seasoned programming language. It is the base for any programming dialects.This is a high level rendition of C language. It is utilized in wide scope of stages for making applications which is execution driven. They are likewise utilized for business items and gaming programming. This language is utilized to get familiar with the rudiments of programming. It is a moderate degree of programming language as if has the essential level just as the high level soaked up in it.
+Pros
+* Similar to C# and Java
+* Compatible
+* Small standard library
+* Compiled language
+* Speedy
+
+Cons
+* Complicated
+* No flexibility in syntax
+* Less memory management
+4.Java
+Java is the most widely used recognized programming language and its especially sought after.It is a broadly useful programming and can be utilized in any stages. It is the most well known programming language. It is utilized for Big information and for web and programming advancement.
+Pros
+* Flexibility
+* Object oriented
+* Simple syntax
+* Less security risks
+* Independent
+Cons
+* Poor performance
+* Unattractive look and feel
+* Memory management
+5.Swift
+Apple in 2014 created Swift for Linux and Mac applications. It is an open source programming lamguage which is not difficult to learn. It upholds nearly everything from programming language Objective-C. Contrasted with other programming dialects,quick takes less coding.
+Pros * Easy to read
+* Easy to add new lineaments
+* No long guidelines
+* Prevents memory leakage
+
+cons
+* Volatile due to continuous updation
+* Limited
 ```
 
 ## OUTPUT:
-![GitHub Logo](unknown.png)
+
+###client side output:
+
+![github Logo](Scrennshotb.png)
+
+![github Logo](Scrennshota.png)
+
+![github Logo](Scrennshotc.png)
 ## RESULT:
 A WebServer Has Been Created Successfully!
